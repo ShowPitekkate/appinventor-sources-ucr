@@ -126,6 +126,8 @@ public class RunD8 extends DexTask implements AndroidTask {
         mainDexClasses.add("org.webrtc.*");
         mainDexClasses.add("redis.clients.jedis.*");
         mainDexClasses.add("com.firebase.client.*");
+        mainDexClasses.add("javax.swing.*");
+        mainDexClasses.add("java.awt.**.*");
 
 
         // Android-related classes
