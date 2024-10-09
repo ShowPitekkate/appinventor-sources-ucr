@@ -295,7 +295,7 @@
     <pathelement location="${lib.dir}/android/support/testing-support-R-classes.jar" />
     <!-- android.jar must go last on the classpath list
          so that its junit (or other) stubs don't override the real ones -->
-    <pathelement location="${lib.dir}/robolectric/robolectric-4.0.2-alldeps.jar" />
+    <pathelement location="${lib.dir}/robolectric/robolectric-4.13.jar" />
     <pathelement location="${android.lib}" />
   </path>
 
