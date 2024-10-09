@@ -130,10 +130,10 @@ public class RunD8 extends DexTask implements AndroidTask {
 
         // Android-related classes
         mainDexClasses.add("androidx.core.content.FileProvider");
-        mainDexClassesmainDexClasses.add("androidx.appcompat.app.*");
-        mainDexClassesmainDexClasses.add("androidx.appcompat.**.*");
-        mainDexClassesmainDexClasses.add("androidx.collection.*");
-        mainDexClassesmainDexClasses.add("androidx.recyclerview.*");
+        mainDexClasses.add("androidx.appcompat.app.*");
+        mainDexClasses.add("androidx.appcompat.**.*");
+        mainDexClasses.add("androidx.collection.*");
+        mainDexClasses.add("androidx.recyclerview.*");
         mainDexClasses.add("androidx.vectordrawable.**.*");
         mainDexClasses.add(context.getProject().getMainClass());
       }
