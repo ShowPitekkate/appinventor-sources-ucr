@@ -118,12 +118,23 @@ public class RunD8 extends DexTask implements AndroidTask {
         // Kawa
         // TODO(ewpatton): Figure out why this gets triggered before Multidex completes
         mainDexClasses.add("kawa.**.*");
+        // Try Fix error new java11
+        mainDexClasses.add("org.osmdroid.views.overlay.*");
+        mainDexClasses.add("org.osmdroid.views.**.*");
+        mainDexClasses.add("com.google.protobuf.*");
+        mainDexClasses.add("com.github.mikephil.charting.**.*");
+        mainDexClasses.add("org.webrtc.*");
+        mainDexClasses.add("redis.clients.jedis.*");
+        mainDexClasses.add("com.firebase.client.*");
+        mainDexClasses.add("javax.swing.*");
+        mainDexClasses.add("java.awt.**.*");
+
 
         // Android-related classes
         mainDexClasses.add("androidx.core.content.FileProvider");
         mainDexClasses.add("androidx.core.**.*");
-        mainDexClasses.add("androidx.appcompat.app.*");
         mainDexClasses.add("androidx.appcompat.**.*");
+        mainDexClasses.add("androidx.appcompat.app.*");
         mainDexClasses.add("androidx.collection.*");
         mainDexClasses.add("androidx.recyclerview.*");
         mainDexClasses.add("androidx.vectordrawable.**.*");
